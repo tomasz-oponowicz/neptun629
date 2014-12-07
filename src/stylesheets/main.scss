@@ -1,21 +1,15 @@
-body, * {
-  font-family: sans-serif;
-  background: #283772;
+@import "compass";
+@import "compass/reset";
+
+$base-font-size: 19px;
+$base-line-height: 27px;
+@include establish-baseline;
+
+html {
+  @include debug-vertical-alignment;
 }
-.container {
-  width: 400px;
-  height: auto;
-  border: 1px solid #ccc;
-  background: #fff;
-  * {
-    background: #fff;
-    
-  }
-  box-shadow: 1px 1px 1px black;
-  border-radius: 3px;
-  margin: 0 auto;
-  padding: 35px;
-  h1 {
-    text-align: center;
-  }
+
+h1 {
+  @include adjust-font-size-to(60px);
+  @include trailer(1, 60px);
 }
