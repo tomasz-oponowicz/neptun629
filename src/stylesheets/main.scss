@@ -15,6 +15,12 @@
 .color-primary-4 { color: #6B0000 }
 */
 
+$link-color: #D41C1C;
+$text-color: #303030;
+$label-color: #AF0B0B;
+$avatar-color: #F0F0F0;
+$selection-color: #FCF5F5;
+
 $base-font-size: 16px;
 $base-line-height: 26px;
 @include establish-baseline;
@@ -26,13 +32,13 @@ html {
 
 body {
   font-family: 'Merriweather', serif;
-  color: #303030;
+  color: $text-color;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 a {
-  color: #303030;
+  // color: #303030;
   // @include trailing-border(3px, 0, $base-font-size);
 }
 
@@ -72,7 +78,7 @@ footer {
     // @include leading-border(0, 1, $base-font-size);
     // @include trailing-border(0, 1, $base-font-size);
 
-    @include leading-border(1px, 1, $base-font-size, dotted #303030);
+    @include leading-border(1px, 1, $base-font-size, dotted $text-color);
     // @include trailing-border(1px, 1, $base-font-size, dotted #303030);
     @include trailing-border(0, 1, $base-font-size);
 
@@ -91,13 +97,13 @@ footer {
     }
     &:hover {
       cursor: pointer;
-      background: #FCF5F5;
-      color: #D41C1C; //#2F0000;
+      background: $selection-color;
+      color: $link-color; //#2F0000;
       span {
-        color: #AF0B0B;
+        color: $label-color;
       }
       span.label {
-        color: #303030;
+        color: $text-color;
       }
     }
   }
@@ -121,7 +127,7 @@ header {
   }
 
   nav {
-    color: #D41C1C;
+    color: $link-color;
     text-align: center;
     li {
       display: inline;
@@ -130,7 +136,7 @@ header {
 }
 
 .highlight {
-  color: #D41C1C;//#c90707;
+  color: $link-color;//#c90707;
   @include leader(1, $base-font-size);
 }
 
@@ -178,7 +184,7 @@ header {
 
 .label {
   // font-weight: 700;
-  color: #AF0B0B;//desaturate(#c90707, 40%);
+  color: $label-color;//desaturate(#c90707, 40%);
   &:before {
     content: "\25FC  ";
   }
@@ -192,7 +198,7 @@ header {
   // -moz-border-radius: 200px;
   margin-left: auto;
   margin-right: auto;
-  background: #F0F0F0;
+  background: $avatar-color;
   // background: url("../images/avatar.jpg") no-repeat;
   // background-position: center;
   // background-size: 200px 200px;
