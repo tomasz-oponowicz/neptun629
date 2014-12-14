@@ -1,15 +1,166 @@
 @import "compass";
 @import "compass/reset";
 
-$base-font-size: 19px;
-$base-line-height: 27px;
+$base-font-size: 16px;
+$base-line-height: 26px;
 @include establish-baseline;
 
 html {
-  @include debug-vertical-alignment;
+  // @include debug-vertical-alignment;
+  background: #fefefe;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  color: #303030;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+a {
+  color: #303030;
+  // @include trailing-border(3px, 0, $base-font-size);
 }
 
 h1 {
-  @include adjust-font-size-to(60px);
-  @include trailer(1, 60px);
+  @include adjust-font-size-to(42px);
+  @include trailer(1, 42px);
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+
+h2 {
+  @include adjust-font-size-to(26px);
+  @include leader(1, 26px);
+  @include trailer(1, 26px);
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  @include adjust-font-size-to(16px);
+}
+
+footer {
+  @include adjust-font-size-to(12px); // 75%
+  @include leader(2, 12px);
+  @include trailer(1, 12px);
+}
+
+.portfolio {
+  li {
+    @include trailer(1, $base-font-size);
+    @include trailing-border(1px, 1, $base-font-size, dotted #303030);
+
+    padding-left: 10px;
+    padding-right: 10px;
+    // p {
+    //   padding-left: 7px;
+    // }
+    &:last-child {
+      @include trailing-border(0, 0, $base-font-size);
+    }
+    // &:hover {
+    //   background: #BCD8E3;
+    // }
+  }
+}
+
+h4 {
+  // font-family: 'Lato', sans-serif;
+  // font-weight: 300;
+  // text-transform: uppercase;
+  @include adjust-font-size-to(12px); // 75%
+  color: #AEADAD;
+}
+
+header {
+  @include leader(3, $base-font-size);
+  @include trailing-border(6px, 3, $base-font-size);
+  @include trailer(1, $base-font-size);
+
+  p {
+    @include trailer(1, $base-font-size);
+  }
+
+  nav {
+    color: #c90707;
+    text-align: center;
+    li {
+      display: inline;
+    }
+  }
+}
+
+.highlight {
+  color: #c90707;
+}
+
+.center {
+  max-width: 685px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lead {
+  text-align: center;
+}
+
+.date {
+}
+
+.location {
+  &:before {
+    // content: "@";
+  }
+}
+
+
+.ellipsis:after {
+  content: "\2026";
+}
+
+.arrow:after {
+  content: " \2192";
+}
+
+.stub {
+  margin-left: 5px;
+  text-transform: none;
+
+  &:before {
+    content: "• ";
+  }
+}
+
+.pull-right {
+  display: block;
+  text-align: right;
+}
+
+.label {
+  // font-weight: 700;
+  color: desaturate(#c90707, 40%);
+  &:before {
+    content: "\25FC  ";
+  }
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  // border-radius: 200px;
+  // -webkit-border-radius: 200px;
+  // -moz-border-radius: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #F0F0F0;
+  // background: url("../images/avatar.jpg") no-repeat;
+  // background-position: center;
+  // background-size: 200px 200px;
+  margin-bottom: 2.1em;
 }
