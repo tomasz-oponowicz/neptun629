@@ -1,6 +1,20 @@
 @import "compass";
 @import "compass/reset";
 
+/* Palette URL: http://paletton.com/#uid=1000u0kt+lZlOstrKqzzSiaJidt */
+
+/* Main Primary color */
+/*
+.color-primary-0 { color: #AF0B0B }
+*/
+
+/*
+.color-primary-1 { color: #E34848 }
+.color-primary-2 { color: #D41C1C }
+.color-primary-3 { color: #910000 }
+.color-primary-4 { color: #6B0000 }
+*/
+
 $base-font-size: 16px;
 $base-line-height: 26px;
 @include establish-baseline;
@@ -33,7 +47,7 @@ h1 {
 h2 {
   @include adjust-font-size-to(26px);
   @include leader(1, 26px);
-  @include trailer(1, 26px);
+  // @include trailer(1, 26px);
   font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
@@ -53,20 +67,39 @@ footer {
 
 .portfolio {
   li {
-    @include trailer(1, $base-font-size);
-    @include trailing-border(1px, 1, $base-font-size, dotted #303030);
+    // @include leader(1, $base-font-size);
+    // @include trailer(1, $base-font-size);
+    // @include leading-border(0, 1, $base-font-size);
+    // @include trailing-border(0, 1, $base-font-size);
+
+    @include leading-border(1px, 1, $base-font-size, dotted #303030);
+    // @include trailing-border(1px, 1, $base-font-size, dotted #303030);
+    @include trailing-border(0, 1, $base-font-size);
 
     padding-left: 10px;
     padding-right: 10px;
     // p {
     //   padding-left: 7px;
     // }
-    &:last-child {
-      @include trailing-border(0, 0, $base-font-size);
+    &:first-child {
+      // @include trailing-border(0, 1, $base-font-size);
+      @include leading-border(0, 1, $base-font-size);
     }
-    // &:hover {
-    //   background: #BCD8E3;
-    // }
+    &:last-child {
+      // @include trailing-border(0, 1, $base-font-size);
+      // @include trailing-border(1px, 1, $base-font-size, dotted #303030);
+    }
+    &:hover {
+      cursor: pointer;
+      background: #FCF5F5;
+      color: #D41C1C; //#2F0000;
+      span {
+        color: #AF0B0B;
+      }
+      span.label {
+        color: #303030;
+      }
+    }
   }
 }
 
@@ -81,14 +114,14 @@ h4 {
 header {
   @include leader(3, $base-font-size);
   @include trailing-border(6px, 3, $base-font-size);
-  @include trailer(1, $base-font-size);
+  @include trailer(2, $base-font-size);
 
   p {
     @include trailer(1, $base-font-size);
   }
 
   nav {
-    color: #c90707;
+    color: #D41C1C;
     text-align: center;
     li {
       display: inline;
@@ -97,7 +130,8 @@ header {
 }
 
 .highlight {
-  color: #c90707;
+  color: #D41C1C;//#c90707;
+  @include leader(1, $base-font-size);
 }
 
 .center {
@@ -144,7 +178,7 @@ header {
 
 .label {
   // font-weight: 700;
-  color: desaturate(#c90707, 40%);
+  color: #AF0B0B;//desaturate(#c90707, 40%);
   &:before {
     content: "\25FC  ";
   }
