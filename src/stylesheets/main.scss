@@ -40,7 +40,6 @@ body {
 a {
   cursor: pointer;
   color: $link-color;
-  // @include trailing-border(3px, 0, $base-font-size);
   &:hover {
     text-decoration: underline;
   }
@@ -57,7 +56,6 @@ h1 {
 h2 {
   @include adjust-font-size-to(26px);
   @include leader(1, 26px);
-  // @include trailer(1, 26px);
   font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
@@ -77,27 +75,14 @@ footer {
 
 .portfolio {
   li {
-    // @include leader(1, $base-font-size);
-    // @include trailer(1, $base-font-size);
-    // @include leading-border(0, 1, $base-font-size);
-    // @include trailing-border(0, 1, $base-font-size);
-
     @include leading-border(1px, 1, $base-font-size, dotted $text-color);
-    // @include trailing-border(1px, 1, $base-font-size, dotted #303030);
     @include trailing-border(0, 1, $base-font-size);
 
     padding-left: 10px;
     padding-right: 10px;
-    // p {
-    //   padding-left: 7px;
-    // }
+
     &:first-child {
-      // @include trailing-border(0, 1, $base-font-size);
       @include leading-border(0, 1, $base-font-size);
-    }
-    &:last-child {
-      // @include trailing-border(0, 1, $base-font-size);
-      // @include trailing-border(1px, 1, $base-font-size, dotted #303030);
     }
     &:hover {
       cursor: pointer;
@@ -114,9 +99,6 @@ footer {
 }
 
 h4 {
-  // font-family: 'Lato', sans-serif;
-  // font-weight: 300;
-  // text-transform: uppercase;
   @include adjust-font-size-to(12px); // 75%
   color: #AEADAD;
 }
@@ -153,15 +135,6 @@ header {
   text-align: center;
 }
 
-.date {
-}
-
-.location {
-  &:before {
-    // content: "@";
-  }
-}
-
 
 .ellipsis:after {
   content: "\2026";
@@ -186,8 +159,7 @@ header {
 }
 
 .label {
-  // font-weight: 700;
-  color: $label-color;//desaturate(#c90707, 40%);
+  color: $label-color;
   &:before {
     content: "\25FC  ";
   }
