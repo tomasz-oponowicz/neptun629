@@ -38,8 +38,12 @@ body {
 }
 
 a {
-  // color: #303030;
+  cursor: pointer;
+  color: $link-color;
   // @include trailing-border(3px, 0, $base-font-size);
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 h1 {
@@ -135,8 +139,7 @@ header {
   }
 }
 
-.highlight {
-  color: $link-color;//#c90707;
+.more {
   @include leader(1, $base-font-size);
 }
 
