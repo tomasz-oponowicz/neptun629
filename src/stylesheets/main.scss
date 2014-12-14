@@ -17,6 +17,7 @@
 
 $link-color: #D41C1C;
 $text-color: #303030;
+$subheading-color: #AEADAD;
 $label-color: #AF0B0B;
 $avatar-color: #F0F0F0;
 $selection-color: #FCF5F5;
@@ -24,6 +25,10 @@ $selection-color: #FCF5F5;
 $base-font-size: 16px;
 $base-line-height: 26px;
 @include establish-baseline;
+
+$x-large-font-size: 42px;
+$large-font-size: 26px;
+$small-font-size: 12px;
 
 html {
   // @include debug-vertical-alignment;
@@ -46,16 +51,16 @@ a {
 }
 
 h1 {
-  @include adjust-font-size-to(42px);
-  @include trailer(1, 42px);
+  @include adjust-font-size-to($x-large-font-size);
+  @include trailer(1, $x-large-font-size);
   font-family: 'Lato', sans-serif;
   font-weight: 900;
   text-align: center;
 }
 
 h2 {
-  @include adjust-font-size-to(26px);
-  @include leader(1, 26px);
+  @include adjust-font-size-to($large-font-size);
+  @include leader(1, $large-font-size);
   font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
@@ -68,9 +73,9 @@ h3 {
 }
 
 footer {
-  @include adjust-font-size-to(12px); // 75%
-  @include leader(2, 12px);
-  @include trailer(1, 12px);
+  @include adjust-font-size-to($small-font-size);
+  @include leader(2, $small-font-size);
+  @include trailer(1, $small-font-size);
 }
 
 .portfolio {
@@ -87,7 +92,7 @@ footer {
     &:hover {
       cursor: pointer;
       background: $selection-color;
-      color: $link-color; //#2F0000;
+      color: $link-color;
       span {
         color: $label-color;
       }
@@ -99,8 +104,8 @@ footer {
 }
 
 h4 {
-  @include adjust-font-size-to(12px); // 75%
-  color: #AEADAD;
+  @include adjust-font-size-to($small-font-size);
+  color: $subheading-color;
 }
 
 header {
