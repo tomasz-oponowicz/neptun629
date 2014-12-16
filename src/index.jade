@@ -6,10 +6,11 @@ html.no-js
     title Dyno
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato:300,400,900|Merriweather:400,700', type='text/css')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato:300,400,900|Merriweather', type='text/css')
     link(rel='stylesheet', href='stylesheets/main.css')
     script(src="scripts/app.js")
   body
+    <!-- TODO remove if works for all browsers -->
     <!--[if lt IE 8]>
     p.browsehappy
       | You are using an <strong>outdated</strong> browser.
@@ -17,79 +18,82 @@ html.no-js
       | to improve your experience.
     <![endif]-->
 
-    header.center
+    header
       div.avatar
       h1 John Smith
-      p.lead Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae fermentum nulla. Pellentesque a tortor at risus faucibus laoreet vel et velit.
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae fermentum nulla. Pellentesque a tortor at risus faucibus laoreet vel et velit.
       nav
-        ul
+        ul.stubs
           li
             a GitHub
-          li.stub
+          li
             a LinkedIn
-          li.stub
+          li
             a Twitter
-          li.stub
+          li
             a Email
-    main.center
-      h2 Projects
-      ul.portfolio
-        li
-          h3 Muvu
-          h4
-            span.role Owner
-            span.stub.label Featured
-          p Phasellus dictum sagittis augue, vitae varius massa dapibus.
-        li
-          h3 Wordify
-          h4
-            span.role Contributor
-            span.stub.label Featured
-          p Nunc id enim ullamcorper, iaculis nunc non, euismod dolor.
-        li
-          h3 Tagspace
-          h4
-            span.role Contributor
-          p Etiam fermentum pulvinar ante sit amet lacinia.
-      a.more.arrow.pull-right More
+    main
+      section
+        h2 Projects
+        ul.references
+          li
+            h3 Muvu
+            ul.stubs
+              li Owner
+              li.stubs-label Featured
+            p Phasellus dictum sagittis augue, vitae varius massa dapibus.
+          li
+            h3 Wordify
+            ul.stubs
+              li Contributor
+              li.stubs-label Featured
+            p Nunc id enim ullamcorper, iaculis nunc non, euismod dolor.
+          li
+            h3 Tagspace
+            ul.stubs
+              li Contributor
+            p Etiam fermentum pulvinar ante sit amet lacinia.
+        a.arrow More
 
-      h2 Articles
-      ul.portfolio
-        li
-          h3 Duis sollicitudin magna
-          h4
-            span.date December 15, 2014
-          p Integer laoreet quam ligula, eget egestas erat ornare in. Nulla ut nulla vitae mauris porta auctor...
-        li
-          h3 Quisque molestie malesuada est
-          h4
-            span.date March 10, 2014
-          p Sed vitae diam ut felis porttitor rhoncus. Morbi vel tempus massa...
-        li
-          h3 Maecenas lacinia a augue ac laoreet
-          h4
-            span.date August 2, 2014
-          p Vivamus vulputate sapien semper, convallis neque eu, hendrerit urna...
-      a.more.arrow.pull-right More
+      section
+        h2 Articles
+        ul.references
+          li
+            h3 Duis sollicitudin magna
+            ul.stubs
+              li December 15, 2014
+            p.ellipsis Integer laoreet quam ligula, eget egestas erat ornare in. Nulla ut nulla vitae mauris porta auctor
+          li
+            h3 Quisque molestie malesuada est
+            ul.stubs
+              li March 10, 2014
+            p.ellipsis Sed vitae diam ut felis porttitor rhoncus. Morbi vel tempus massa
+          li
+            h3 Maecenas lacinia a augue ac laoreet
+            ul.stubs
+              li August 2, 2014
+            p.ellipsis Vivamus vulputate sapien semper, convallis neque eu, hendrerit urna
+        a.arrow More
 
-      h2 Meetups
-      ul.portfolio
-        li
-          h3 Nunc id ligul
-          h4
-            span.location dotJS
-            span.stub.date January 1, 2015
-            span.stub.label Upcoming
-          p Etiam ultrices scelerisque mauris, sit amet interdum ligula ultricies nec.
-        li
-          h3 Nunc id ligul
-          h4
-            span.location JSConf
-            span.stub.date November 21, 2014
-          p Etiam ultrices scelerisque mauris, sit amet interdum ligula ultricies nec.
-      a.more.arrow.pull-right More
+      section
+        h2 Meetups
+        ul.references
+          li
+            h3 Nunc id ligul
+            ul.stubs
+              li dotJS
+              li January 1, 2015
+              li.stubs-label Upcoming
+            p.ellipsis Etiam ultrices scelerisque mauris, sit amet interdum ligula ultricies nec
+          li
+            h3 Nunc id ligul
+            ul.stubs
+              li JSConf
+              li November 21, 2014
+            p.ellipsis Etiam ultrices scelerisque mauris, sit amet interdum ligula ultricies nec
+        a.arrow More
 
-    footer.center &mdash; © 2014 / Sans Theme by Tomasz Oponowicz
+    footer &mdash; © 2014 / Sans Theme by Tomasz Oponowicz
 
   //- Google Analytics: change UA-XXXXX-X to be your site's ID.
   //-

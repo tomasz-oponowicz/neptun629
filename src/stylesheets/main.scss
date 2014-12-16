@@ -15,12 +15,19 @@
 .color-primary-4 { color: #6B0000 }
 */
 
+$avatar-color: #F0F0F0;
+
 $link-color: #D41C1C;
 $text-color: #303030;
-$subheading-color: #AEADAD;
-$label-color: #AF0B0B;
-$avatar-color: #F0F0F0;
-$selection-color: #FCF5F5;
+$background-color: #FEFEFE;
+
+$normal-label-color: #AEADAD;
+$important-label-color: #AF0B0B;
+
+$selected-text-color: $link-color;
+$selected-normal-label-color: $important-label-color;
+$selected-important-label-color: $text-color;
+$selected-reference-color: #FCF5F5;
 
 $base-font-size: 16px;
 $base-line-height: 26px;
@@ -30,88 +37,75 @@ $x-large-font-size: 42px;
 $large-font-size: 26px;
 $small-font-size: 12px;
 
+$avatar-size: 200px;
+$avatar-margin-bottom: 2.1em;
+
 html {
-  // @include debug-vertical-alignment;
-  background: #fefefe;
+  background: $background-color;
+}
+
+/* Comment to safe few bytes in the output stylesheet. */
+html.debug-grid {
+  @include debug-vertical-alignment;
 }
 
 body {
-  font-family: 'Merriweather', serif;
-  color: $text-color;
   padding-left: 20px;
   padding-right: 20px;
+
+  color: $text-color;
+
+  font-family: 'Merriweather', serif;
 }
 
 a {
   cursor: pointer;
+
   color: $link-color;
+
   &:hover {
     text-decoration: underline;
   }
 }
 
-h1 {
-  @include adjust-font-size-to($x-large-font-size);
-  @include trailer(1, $x-large-font-size);
-  font-family: 'Lato', sans-serif;
-  font-weight: 900;
-  text-align: center;
-}
-
-h2 {
-  @include adjust-font-size-to($large-font-size);
-  @include leader(1, $large-font-size);
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-}
-
-h3 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  text-transform: uppercase;
-  @include adjust-font-size-to(16px);
-}
-
-footer {
-  @include adjust-font-size-to($small-font-size);
-  @include leader(2, $small-font-size);
-  @include trailer(1, $small-font-size);
-}
-
-.portfolio {
-  li {
-    @include leading-border(1px, 1, $base-font-size, dotted $text-color);
-    @include trailing-border(0, 1, $base-font-size);
-
-    padding-left: 10px;
-    padding-right: 10px;
-
-    &:first-child {
-      @include leading-border(0, 1, $base-font-size);
-    }
-    &:hover {
-      cursor: pointer;
-      background: $selection-color;
-      color: $link-color;
-      span {
-        color: $label-color;
-      }
-      span.label {
-        color: $text-color;
-      }
-    }
-  }
-}
-
-h4 {
-  @include adjust-font-size-to($small-font-size);
-  color: $subheading-color;
+header, main, footer {
+  max-width: 685px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header {
   @include leader(3, $base-font-size);
-  @include trailing-border(6px, 3, $base-font-size);
   @include trailer(2, $base-font-size);
+
+  @include trailing-border(6px, 3, $base-font-size);
+
+  text-align: center;
+
+  .avatar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: $avatar-margin-bottom;
+
+    width: $avatar-size;
+    height: $avatar-size;
+
+    @include border-radius($avatar-size);
+
+    // TODO use background property only
+    background: url("../images/avatar2.jpg") no-repeat;
+    background-position: center;
+    background-size: $avatar-size;
+  }
+
+  h1 {
+    @include adjust-font-size-to($x-large-font-size);
+
+    @include trailer(1, $x-large-font-size);
+
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+  }
 
   p {
     @include trailer(1, $base-font-size);
@@ -119,27 +113,104 @@ header {
 
   nav {
     color: $link-color;
-    text-align: center;
-    li {
-      display: inline;
-    }
   }
 }
 
-.more {
-  @include leader(1, $base-font-size);
+section {
+  h2 {
+    @include adjust-font-size-to($large-font-size);
+
+    @include leader(1, $large-font-size);
+
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+  }
+
+  a:last-child {
+    display: block;
+
+    @include leader(1, $base-font-size);
+
+    text-align: right;
+  }
 }
 
-.center {
-  max-width: 685px;
-  margin-left: auto;
-  margin-right: auto;
+.references > li {
+  @include leading-border(1px, 1, $base-font-size, dotted $text-color);
+  @include trailing-border(0, 1, $base-font-size);
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  &:hover {
+    cursor: pointer;
+
+    color: $selected-text-color;
+    background: $selected-reference-color;
+
+    .stubs {
+      color: $selected-normal-label-color;
+    }
+
+    .stubs-label {
+      color: $selected-important-label-color;
+    }
+  }
+
+  &:first-child {
+    @include leading-border(0, 1, $base-font-size);
+  }
+
+  h3 {
+    @include adjust-font-size-to(16px);
+
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+
+    text-transform: uppercase;
+  }
+
+  .stubs {
+    @include adjust-font-size-to($small-font-size);
+
+    color: $normal-label-color;
+  }
 }
 
-.lead {
-  text-align: center;
+footer {
+  @include adjust-font-size-to($small-font-size);
+
+  @include leader(2, $small-font-size);
+  @include trailer(1, $small-font-size);
 }
 
+.stubs {
+  li {
+    display: inline;
+
+    margin-left: 5px;
+
+    &:before {
+      content: "• ";
+    }
+
+    &:first-child {
+      margin-left: 0px;
+
+      &:before {
+        content: none;
+      }
+    }
+  }
+
+  li.stubs-label {
+    color: $important-label-color;
+
+    &:before {
+      content: "\25FC  ";
+    }
+  }
+}
 
 .ellipsis:after {
   content: "\2026";
@@ -147,40 +218,4 @@ header {
 
 .arrow:after {
   content: " \2192";
-}
-
-.stub {
-  margin-left: 5px;
-  text-transform: none;
-
-  &:before {
-    content: "• ";
-  }
-}
-
-.pull-right {
-  display: block;
-  text-align: right;
-}
-
-.label {
-  color: $label-color;
-  &:before {
-    content: "\25FC  ";
-  }
-}
-
-.avatar {
-  width: 200px;
-  height: 200px;
-  // border-radius: 200px;
-  // -webkit-border-radius: 200px;
-  // -moz-border-radius: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  background: $avatar-color;
-  // background: url("../images/avatar.jpg") no-repeat;
-  // background-position: center;
-  // background-size: 200px 200px;
-  margin-bottom: 2.1em;
 }
