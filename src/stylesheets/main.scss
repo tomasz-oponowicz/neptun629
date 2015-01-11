@@ -92,10 +92,7 @@ header {
 
     @include border-radius($avatar-size);
 
-    // TODO use background property only
-    background: url("../images/avatar2.jpg") no-repeat;
-    background-position: center;
-    background-size: $avatar-size;
+    background: $avatar-color url("../images/avatar.png") center/cover no-repeat;
   }
 
   h1 {
