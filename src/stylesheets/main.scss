@@ -1,5 +1,22 @@
 @import "compass";
 @import "compass/reset";
+@import "compass/css3";
+
+// keyframes mixin
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
 
 /* Palette URL: http://paletton.com/#uid=1000u0kt+lZlOstrKqzzSiaJidt */
 
@@ -123,7 +140,7 @@ section {
     font-weight: 400;
   }
 
-  a:last-child {
+  .more {
     display: block;
 
     @include leader(1, $base-font-size);
@@ -215,4 +232,32 @@ footer {
 
 .arrow:after {
   content: " \2192";
+}
+
+@include keyframes(fadeInFromNone) {
+  0% {
+    display:none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.fade  {
+  opacity: 1;
+  @include animation-duration(1s);
+  @include animation-name(fadeInFromNone);
+}
+
+.hidden {
+  display: none !important;
+  opacity: 0;
 }

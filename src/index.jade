@@ -8,7 +8,6 @@ html.no-js
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato:300,400,900|Merriweather', type='text/css')
     link(rel='stylesheet', href='stylesheets/main.css')
-    script(src="scripts/app.js")
   body
     <!-- TODO remove if works for all browsers -->
     <!--[if lt IE 8]>
@@ -53,7 +52,17 @@ html.no-js
             ul.stubs
               li Contributor
             p Etiam fermentum pulvinar ante sit amet lacinia.
-        a.arrow More
+          li.fade.hidden
+            h3 Aase
+            ul.stubs
+              li Owner
+            p Duis id neque sed tortor placerat tristique. Mauris cursus justo orci.
+          li.fade.hidden
+            h3 Helionape
+            ul.stubs
+              li Owner
+            p Suspendisse malesuada mi in tincidunt porttitor. Donec at consectetur enim.
+        a.arrow.more More
 
       section
         h2 Articles
@@ -73,7 +82,7 @@ html.no-js
             ul.stubs
               li August 2, 2014
             p.ellipsis Vivamus vulputate sapien semper, convallis neque eu, hendrerit urna
-        a.arrow More
+        a.arrow.more More
 
       section
         h2 Meetups
@@ -91,9 +100,11 @@ html.no-js
               li JSConf
               li November 21, 2014
             p.ellipsis Etiam ultrices scelerisque mauris, sit amet interdum ligula ultricies nec
-        a.arrow More
+        a.arrow.more More
 
     footer &mdash; © 2014 / <a href="#"> Hecuba Theme</a> by <a href="https://github.com/tomasz-oponowicz"> Tomasz Oponowicz</a>
+
+    script(src="scripts/app.js")
 
   //- Google Analytics: change UA-XXXXX-X to be your site's ID.
   //-
