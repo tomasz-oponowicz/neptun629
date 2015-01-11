@@ -22,7 +22,7 @@ gulp.task('coffee', function() {
   return gulp.src('src/scripts/main.coffee', { read: false })
     .pipe($.plumber())
     .pipe($.browserify({
-      debug: true,
+      debug: false,
       insertGlobals: false,
       transform: ['coffeeify'],
       extensions: ['.coffee']
