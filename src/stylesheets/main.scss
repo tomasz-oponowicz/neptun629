@@ -196,6 +196,10 @@ footer {
 
   @include leader(2, $small-font-size);
   @include trailer(1, $small-font-size);
+
+  span:nth-child(odd):after {
+    content: ' / ';
+  }
 }
 
 .stubs {
@@ -260,4 +264,41 @@ footer {
 .hidden {
   display: none !important;
   opacity: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    .stubs {
+      li {
+        display: block;
+        margin: 0;
+        text-align: center;
+
+        &:before {
+          content: none;
+        }
+      }
+    }
+  }
+
+  section {
+    .more {
+      text-align: center;
+    }
+  }
+
+  .arrow:after {
+    content: none;
+  }
+
+  footer {
+    span {
+        display: block;
+        text-align: center;
+
+        &:nth-child(odd):after {
+          content: none;
+        }
+    }
+  }
 }
