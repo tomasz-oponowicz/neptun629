@@ -18,5 +18,6 @@ for link in document.querySelectorAll('.more')
     if (entries.length <= 3)
       addClass(this, 'hidden')
 
-
-
+for entry in document.querySelectorAll('ul.references > li')
+  entry.onclick = () ->
+    document.location = this.dataset.href
