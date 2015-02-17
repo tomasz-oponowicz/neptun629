@@ -16,10 +16,10 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae fermentum nulla. Pellentesque a tortor at risus faucibus laoreet vel et velit.</p>
       <nav>
         <ul class="stubs">
-          <li><a>GitHub</a></li>
-          <li><a>LinkedIn</a></li>
-          <li><a>Twitter</a></li>
-          <li><a>Email</a></li>
+          <li><a href="https://github.com">GitHub</a></li>
+          <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+          <li><a href="https://twitter.com">Twitter</a></li>
+          <li><a href="mailto:john.smith@mailinator.com">Email</a></li>
         </ul>
       </nav>
     </header>
@@ -27,15 +27,15 @@
       <section>
         <h2>Projects</h2>
         <ul class="references">
-          <li>
-            <h3>Muvu</h3>
+          <li data-href="https://google.com/">
+            <h3>Brainbeat</h3>
             <ul class="stubs">
               <li>Owner</li>
               <li class="stubs-label">Featured</li>
             </ul>
-            <p>Phasellus dictum sagittis augue, vitae varius massa dapibus.</p>
+            <p>Phasellus dictum sagittis augue, vitae varius massa dapibus. Donec odio dui, maximus quis sodales non.</p>
           </li>
-          <li>
+          <li data-href="https://google.com/">
             <h3>Wordify</h3>
             <ul class="stubs">
               <li>Contributor</li>
@@ -43,59 +43,80 @@
             </ul>
             <p>Nunc id enim ullamcorper, iaculis nunc non, euismod dolor.</p>
           </li>
-          <li>
+          <li data-href="https://google.com/">
             <h3>Tagspace</h3>
             <ul class="stubs">
               <li>Contributor</li>
             </ul>
-            <p>Etiam fermentum pulvinar ante sit amet lacinia.</p>
+            <p>Curabitur convallis, libero vel luctus varius, lectus augue suscipit lectus, vel rhoncus justo elit vitae neque.</p>
           </li>
-          <li class="fade hidden">
-            <h3>Aase</h3>
+          <li data-href="https://google.com/" class="fade hidden">
+            <h3>Flipcat</h3>
             <ul class="stubs">
-              <li>Owner</li>
+              <li>Contributor</li>
             </ul>
             <p>Duis id neque sed tortor placerat tristique. Mauris cursus justo orci.</p>
           </li>
-          <li class="fade hidden">
-            <h3>Helionape</h3>
+          <li data-href="https://google.com/" class="fade hidden">
+            <h3>Tekwire</h3>
             <ul class="stubs">
               <li>Owner</li>
             </ul>
-            <p>Suspendisse malesuada mi in tincidunt porttitor. Donec at consectetur enim.</p>
+            <p>Aliquam blandit mi ac volutpat rutrum. Pellentesque et nibh ut erat elementum tincidunt. Nulla eget sapien id arcu pellentesque pharetra.</p>
+          </li>
+          <li data-href="https://google.com/" class="fade hidden">
+            <h3>Realdog</h3>
+            <ul class="stubs">
+              <li>Contributor</li>
+            </ul>
+            <p>Vivamus at mollis mauris. Maecenas fringilla efficitur mauris, vitae accumsan lorem.</p>
+          </li>
+          <li data-href="https://google.com/" class="fade hidden">
+            <h3>Fliplinks</h3>
+            <ul class="stubs">
+              <li>Owner</li>
+            </ul>
+            <p>Ut tristique enim vel elit maximus, at viverra elit aliquam. Aenean tortor dui, gravida in sodales vitae, tincidunt eget tellus.  Proin vehicula nisi a felis luctus.</p>
           </li>
         </ul><a class="arrow more">More</a>
       </section>
       <section>
         <h2>Articles</h2>
         <ul class="references">
-          <li>
+          <li data-href="https://google.com/">
             <h3>Duis sollicitudin magna</h3>
             <ul class="stubs">
               <li>December 15, 2014</li>
             </ul>
             <p class="ellipsis">Integer laoreet quam ligula, eget egestas erat ornare in. Nulla ut nulla vitae mauris porta auctor</p>
           </li>
-          <li>
+          <li data-href="https://google.com/">
             <h3>Quisque molestie malesuada est</h3>
             <ul class="stubs">
               <li>March 10, 2014</li>
             </ul>
             <p class="ellipsis">Sed vitae diam ut felis porttitor rhoncus. Morbi vel tempus massa</p>
           </li>
-          <li>
+          <li data-href="https://google.com/">
             <h3>Maecenas lacinia a augue ac laoreet</h3>
             <ul class="stubs">
               <li>August 2, 2014</li>
             </ul>
             <p class="ellipsis">Vivamus vulputate sapien semper, convallis neque eu, hendrerit urna</p>
           </li>
+          <li data-href="https://google.com/" class="fade hidden">
+            <h3>Fusce cursus porta lacus, at placerat nibh</h3>
+            <ul class="stubs">
+              <li>May 8, 2013</li>
+            </ul>
+            <p class="ellipsis">Pellentesque rhoncus, odio quis mattis viverra, mauris lorem pulvinar velit, in porta lacus ligula sed tortor.</p>
+          </li>
         </ul><a class="arrow more">More</a>
       </section>
       <section>
         <h2>Meetups</h2>
         <ul class="references">
-          <li>
+          <li data-href="https://google.com/">
             <h3>Nunc id ligul</h3>
             <ul class="stubs">
               <li>dotJS</li>
@@ -104,18 +125,26 @@
             </ul>
             <p class="ellipsis">Etiam ultrices scelerisque mauris, sit amet interdum ligula ultricies nec</p>
           </li>
-          <li>
-            <h3>Nunc id ligul</h3>
+          <li data-href="https://google.com/">
+            <h3>Ut at sapien nec</h3>
             <ul class="stubs">
               <li>JSConf</li>
               <li>November 21, 2014</li>
             </ul>
-            <p class="ellipsis">Etiam ultrices scelerisque mauris, sit amet interdum ligula ultricies nec</p>
+            <p class="ellipsis">Maecenas aliquam ut nisl at dignissim. In porta nunc mauris, sit amet nunc consectetur at.</p>
+          </li>
+          <li data-href="https://google.com/" class="fade hidden">
+            <h3>Vivamus id mollis eros</h3>
+            <ul class="stubs">
+              <li>FullStack</li>
+              <li>September 15, 2014</li>
+            </ul>
+            <p class="ellipsis">Duis rhoncus convallis quam, id tincidunt orci eleifend eu. Nulla id elit tempus, ullamcorper ligula nec, posuere lorem.</p>
           </li>
         </ul><a class="arrow more">More</a>
       </section>
     </main>
-    <footer><span>&mdash; Copyright &copy; <script type="text/javascript"> document.write(new Date().getFullYear());</script> John Smith</span><span><a href="#"> Neptun629 Theme</a> by <a href="https://github.com/tomasz-oponowicz"> Tomasz Oponowicz</a></span></footer>
+    <footer><span>&mdash; Copyright &copy; <script type="text/javascript"> document.write(new Date().getFullYear());</script> John Smith</span><span><a href="https://github.com/tomasz-oponowicz/neptun629"> Neptun629 Theme</a> by <a href="https://github.com/tomasz-oponowicz"> Tomasz Oponowicz</a></span></footer>
     <script src="scripts/app.js"></script>
   </body>
 </html>
