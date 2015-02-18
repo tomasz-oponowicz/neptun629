@@ -12,7 +12,8 @@ gulp.task('compass', function() {
         .pipe($.plumber())
         .pipe($.compass({
             css: 'dist/stylesheets',
-            sass: 'src/stylesheets'
+            sass: 'src/stylesheets',
+            comments: false
         }))
         .pipe(gulp.dest('dist/stylesheets'))
         .pipe( $.livereload( server ));
@@ -64,7 +65,7 @@ gulp.task('watch', function () {
     gulp.watch('src/scripts/*.coffee',['coffee']);
 
     gulp.watch('src/*.jade',['templates']);
-    
+
   });
 });
 
