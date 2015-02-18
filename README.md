@@ -25,7 +25,7 @@ It's there! You can try [a live demo](http://tomasz-oponowicz.github.io/neptun62
 
 ## Setup
 
-1. Download [the latest release](https://github.com/tomasz-oponowicz/neptun629/releases);
+1. Download [the latest release](https://github.com/tomasz-oponowicz/neptun629/releases) and extract it;
 1. Adjust `./index.html` content and `./images/avatar.png` to your needs;
 
 ## Changelog
