@@ -18,18 +18,20 @@
   }
 }
 
-/* Palette URL: http://paletton.com/#uid=1000u0kt+lZlOstrKqzzSiaJidt */
-
-/* Main Primary color */
 /*
+
+Palette URL:
+http://paletton.com/#uid=1000u0kt+lZlOstrKqzzSiaJidt
+
+Base color:
 .color-primary-0 { color: #AF0B0B }
-*/
 
-/*
+Others:
 .color-primary-1 { color: #E34848 }
 .color-primary-2 { color: #D41C1C }
 .color-primary-3 { color: #910000 }
 .color-primary-4 { color: #6B0000 }
+
 */
 
 $avatar-color: #F0F0F0;
@@ -61,7 +63,7 @@ html {
   background: $background-color;
 }
 
-/* Comment to safe few bytes in the output stylesheet. */
+/* Comment out to safe few bytes in the output stylesheet. */
 html.debug-grid {
   @include debug-vertical-alignment;
 }
