@@ -1,6 +1,8 @@
 # neptun629
 
-Aesthetic portfolio theme for developers. The _Neptun 629_ is a model name of [the first mass-produced television set](http://stare-telewizory.republika.pl/grafika/katalog/duze/kat79/neptun426.jpg). It suggests an old school style and focus on basics. Key features include:
+Aesthetic portfolio theme for developers. The _Neptun 629_ is a model name of [the first mass-produced television set](http://stare-telewizory.republika.pl/grafika/katalog/duze/kat79/neptun426.jpg). It suggests an old school style and a focus on basics. The Neptun629 theme is partially based on the amazing [Ghostwriter theme](https://github.com/roryg/ghostwriter). 
+
+Key features include:
 
 * [vertical rhythm](http://designmodo.com/vertical-rhythm/) which introduces mysterious balanced page layout;
 * [Golden Ratio Typography](http://www.pearsonified.com/2011/12/golden-ratio-typography.php) which improves reading capabilities;
@@ -20,3 +22,18 @@ Minimal theme requirements are:
 ## Demo
 
 It's there! You can try [a live demo](http://tomasz-oponowicz.github.io/neptun629/).
+
+## Setup
+
+1. Download [the latest release](https://github.com/tomasz-oponowicz/neptun629/releases);
+1. Adjust `./index.html` content and `./images/avatar.png` to your needs;
+
+## Changelog
+
+### 1.0.1
+
+* Link entry should handle on click action #1
+
+### 1.0.0
+
+* First version
