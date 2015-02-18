@@ -1,12 +1,12 @@
 # neptun629
 
-Aesthetic portfolio theme for developers released under [the MIT License](https://github.com/tomasz-oponowicz/neptun629/blob/master/LICENSE.txt). The _Neptun 629_ is a model name of [the first mass-produced television set](http://stare-telewizory.republika.pl/grafika/katalog/duze/kat79/neptun426.jpg). It suggests an old school style and a focus on basics. The Neptun629 theme is partially based on the amazing [Ghostwriter theme](https://github.com/roryg/ghostwriter). 
+Aesthetic portfolio theme for developers released under [the MIT License](https://github.com/tomasz-oponowicz/neptun629/blob/master/LICENSE.txt). The _Neptun 629_ is a model name of [the first mass-produced television set](http://stare-telewizory.republika.pl/grafika/katalog/duze/kat79/neptun426.jpg). It suggests an old school style and a focus on basics. The neptun629 theme is partially based on the amazing [Ghostwriter theme](https://github.com/roryg/ghostwriter). 
 
 Key features include:
 
-* [vertical rhythm](http://designmodo.com/vertical-rhythm/) which introduces mysterious balanced page layout;
-* [Golden Ratio Typography](http://www.pearsonified.com/2011/12/golden-ratio-typography.php) which improves reading capabilities;
-* [responsive design](http://en.wikipedia.org/wiki/Responsive_web_design) which provides optimal viewing experience on mobile devices;
+* the [vertical rhythm](http://designmodo.com/vertical-rhythm/) which introduces a mysterious balanced page layout;
+* the [Golden Ratio Typography](http://www.pearsonified.com/2011/12/golden-ratio-typography.php) which improves reading capabilities;
+* the [responsive design](http://en.wikipedia.org/wiki/Responsive_web_design) which provides an optimal viewing experience on mobile devices;
 
 Minimal theme requirements are:
 
@@ -41,7 +41,7 @@ __TIP:__ In order to enable the vertical rhythm grid, add the `debug-grid` class
 
 ### 1.0.1
 
-* A link entry should handle on a click action [#1](https://github.com/tomasz-oponowicz/neptun629/issues/1);
+* A link entry should handle an onclick action [#1](https://github.com/tomasz-oponowicz/neptun629/issues/1);
 
 ### 1.0.0
 
