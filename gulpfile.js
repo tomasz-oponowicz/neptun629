@@ -65,7 +65,7 @@ gulp.task('watch', function () {
     gulp.watch('src/scripts/*.coffee',['coffee']);
 
     gulp.watch('src/*.jade',['templates']);
-    
+
   });
 });
 
