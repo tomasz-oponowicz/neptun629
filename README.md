@@ -32,15 +32,16 @@ __TIP:__ In order to enable vertical rhythm grid, add `debug` class to `html` ta
 
 ## Changelog
 
-### 1.0.4
+### 1.0.5
 
 * Disable SASS comments;
 * Extend the README;
+* Add usage example [#2](https://github.com/tomasz-oponowicz/neptun629/issues/2);
 * Add a license;
 
 ### 1.0.1
 
-* Link entry should handle on click action #1;
+* A link entry should handle on a click action [#1](https://github.com/tomasz-oponowicz/neptun629/issues/1);
 
 ### 1.0.0
 
