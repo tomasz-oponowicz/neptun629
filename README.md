@@ -30,10 +30,16 @@ It's there! You can try [a live demo](http://tomasz-oponowicz.github.io/neptun62
 
 ## Changelog
 
+### 1.0.4
+
+* Disable SASS comments;
+* Extend the README;
+* Add a license;
+
 ### 1.0.1
 
-* Link entry should handle on click action #1
+* Link entry should handle on click action #1;
 
 ### 1.0.0
 
-* First version
+* Initial commit;
