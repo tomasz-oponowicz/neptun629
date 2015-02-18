@@ -1,6 +1,6 @@
 # neptun629
 
-Aesthetic portfolio theme for developers. The _Neptun 629_ is a model name of [the first mass-produced television set](http://stare-telewizory.republika.pl/grafika/katalog/duze/kat79/neptun426.jpg). It suggests an old school style and a focus on basics. The Neptun629 theme is partially based on the amazing [Ghostwriter theme](https://github.com/roryg/ghostwriter). 
+Aesthetic portfolio theme for developers released under [the MIT License](https://github.com/tomasz-oponowicz/neptun629/blob/master/LICENSE.txt). The _Neptun 629_ is a model name of [the first mass-produced television set](http://stare-telewizory.republika.pl/grafika/katalog/duze/kat79/neptun426.jpg). It suggests an old school style and a focus on basics. The Neptun629 theme is partially based on the amazing [Ghostwriter theme](https://github.com/roryg/ghostwriter). 
 
 Key features include:
 
