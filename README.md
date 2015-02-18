@@ -1,6 +1,6 @@
 # neptun629
 
-Aesthetic portfolio theme for developers. The _Neptun 629_ is a model name of [the first mass-produced television set](http://stare-telewizory.republika.pl/grafika/katalog/duze/kat79/neptun426.jpg). It suggests an old school style and a focus on basics. The Neptun629 theme is partially based on the amazing [Ghostwriter theme](https://github.com/roryg/ghostwriter). 
+Aesthetic portfolio theme for developers released under [the MIT License](https://github.com/tomasz-oponowicz/neptun629/blob/master/LICENSE.txt). The _Neptun 629_ is a model name of [the first mass-produced television set](http://stare-telewizory.republika.pl/grafika/katalog/duze/kat79/neptun426.jpg). It suggests an old school style and a focus on basics. The Neptun629 theme is partially based on the amazing [Ghostwriter theme](https://github.com/roryg/ghostwriter). 
 
 Key features include:
 
@@ -15,7 +15,7 @@ Minimal theme requirements are:
 * Internet Explorer 9;
 * Safari 6.1;
 * Opera 12.10;
-* Safari Mobile iOS 7;
+* Safari iOS 7;
 
 ...for more information please visit [generated screenshots](http://www.browserstack.com/screenshots/e3dde4dec14f46390f52469dafe667cdc93ab720).
 
@@ -25,15 +25,21 @@ It's there! You can try [a live demo](http://tomasz-oponowicz.github.io/neptun62
 
 ## Setup
 
-1. Download [the latest release](https://github.com/tomasz-oponowicz/neptun629/releases);
+1. Download [the latest release](https://github.com/tomasz-oponowicz/neptun629/releases) and extract it;
 1. Adjust `./index.html` content and `./images/avatar.png` to your needs;
 
 ## Changelog
 
+### 1.0.4
+
+* Disable SASS comments;
+* Extend the README;
+* Add a license;
+
 ### 1.0.1
 
-* Link entry should handle on click action #1
+* Link entry should handle on click action #1;
 
 ### 1.0.0
 
-* First version
+* Initial commit;
