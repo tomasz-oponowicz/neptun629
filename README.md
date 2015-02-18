@@ -23,6 +23,11 @@ Minimal theme requirements are:
 
 It's there! You can try [a live demo](http://tomasz-oponowicz.github.io/neptun629/).
 
+## Setup
+
+1. Download [the latest release](https://github.com/tomasz-oponowicz/neptun629/releases);
+1. Adjust `./index.html` content and `./images/avatar.png` to your needs;
+
 ## Changelog
 
 ### 1.0.1
