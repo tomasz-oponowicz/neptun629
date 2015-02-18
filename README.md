@@ -23,6 +23,8 @@ Minimal theme requirements are:
 
 It's there! You can try [a live demo](http://tomasz-oponowicz.github.io/neptun629/).
 
+__TIP:__ In order to enable vertical rhythm grid, add `debug` class to `html` tag.
+
 ## Setup
 
 1. Download [the latest release](https://github.com/tomasz-oponowicz/neptun629/releases) and extract it;
