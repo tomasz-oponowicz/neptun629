@@ -15,7 +15,7 @@ Minimal theme requirements are:
 * Internet Explorer 9;
 * Safari 6.1;
 * Opera 12.10;
-* Safari Mobile iOS 7;
+* Safari iOS 7;
 
 ...for more information please visit [generated screenshots](http://www.browserstack.com/screenshots/e3dde4dec14f46390f52469dafe667cdc93ab720).
 
